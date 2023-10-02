@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etiquetas input</title>
+</head>
+
+<body>
+  <form action="./aaaaa" method="post" name="Formulario">
+    <fieldset>
+      <legend>Datos básicos</legend>
+      <label for="email">
+        <input type="email" name="email" id="email" placeholder="Introduce tu email">
+      </label>
+      <label for="hidden">
+        <input type="hidden" name="hidden" id="hidden"
+          placeholder="Datos que queremos enviar con el formulario pero que no se muestren en pantalla">
+      </label>
+      <label for="password">
+        <input type="password" name="password" id="password" placeholder="Introduce tu contraseña">
+      </label>
+      <label for="search-form">
+        <input type="search" name="search" id="search" placeholder="Búsqueda">
+      </label>
+      <label for="telefono">
+        <input type="tel" name="telefono" id="telefono" placeholder="Introduce tu número de teléfono">
+      </label>
+      <label for="url">
+        <input type="url" name="url" id="url">
+      </label>
+      <label for="text-form">
+        <input type="text" name="text-form" id="text-form" placeholder="Introduce tu opinión">
+      </label>
+    </fieldset>
+    <form action="/user" method="post">
+      <fieldset>
+        <label for="age">
+          <input type="number" name="age" id="age" placeholder="Su edad" min="14" max="67">
+        </label>
+        <label for="points"> Points: </label>
+        <input type="number" name="points" id="points" step="5">
+        <button type="submit"> Enviar</button>
+      </fieldset>
+    </form>
+    <form action="/send.php" method="post" name="Formulario">
+      <fieldset>
+        <legend>Datos numéricos</legend>
+        <label for="date-form">
+          <input type="date" name="date-form" id="date-form" min="2023/05/21" max="2024/01/01" step="2">
+        </label>
+        <label for="time-form">
+          <input type="time" name="time-form" id="time-form" min="18:00" max="21:00" step="3600">
+        </label>
+        <label for="time-local">
+          <input type="datetime-local" name="time-local" id="time-local">
+        </label>
+        <label for="month">
+          <input type="month" name="month" id="month">
+        </label>
+        <label for="week">
+          <input type="week" name="week" id="week">
+        </label>
+      </fieldset>
+    </form>
+    <form action="/fgfds" method="post" name="Formulario">
+      <fieldset>
+        <legend>Botón</legend>
+        <label for="button">
+          <input type="button" value="ENVIAR">
+        </label>
+      </fieldset>
+
+      <input type="checkbox" name="nombre" id="identificador" checked="checked" />
+
+    </form>
+
+
+  </form>
+
+
+  <form action="/rftgyhgfd" method="post" name="Formulario">
+
+    <fieldset>
+      <legend>Radio-form</legend>
+      <label for="edad">
+        <input type="radio" name="edad" id="menos18" value="menos18" />Menos de 18
+        <input type="radio" name="edad" id="18a30" value="18a30" /> Entre 18 y 30
+        <input type="radio" name="edad" id="30a52" /> Entre 30 y 52
+      </label>
+    </fieldset>
+  </form>
+
+  <form action="/fgtyh" method="post" name="formulario">
+    <fieldset>
+      <legend>Etiqueta select</legend>
+      <label for="Vengadores">Elige tu favorito:</label>
+      <select name="Vengadores" id="Vengadores">
+        <option value="Thor">Thor</option>
+        <option value="Capitán América">Capitán América</option>
+        <option value="Ironman">Ironman</option>
+      </select>
+    </fieldset>
+  </form>
+
+
+  <form action="/fghdf" method="post" name="Formulario">
+    <fieldset>
+      <legend>OPTGROUP</legend>
+      <select name="Ciudad" id="Ciudad">
+        <optgroup> <label for="Europa"></label>
+          <option> Madrid</option>
+          <option> Londres </option>
+          <option> Berlín </option>
+        </optgroup>
+        <optgroup>
+          <label for="Sudamérica"></label>
+          <option value="lima"> Lima </option>
+          <option value="Bogotá"> Bogotá </option>
+          <option value="Perú"> Perú </option>
+        </optgroup>
+      </select>
+    </fieldset>
+  </form>
+
+  <form action="/frtgyhg" method="post" name="Formulario">
+    <input type="text" list="items" />
+    <datalist id="items">
+      <option value="1">Opción 1</option>
+      <option value="2">Opción 2</option>
+      <option value="3">Opción 3</option>
+    </datalist>
+  </form>
+
+  <form action="/fg" method="post">
+    <label for="files"> Select files: </label>
+    <input type="file" name="files" id="files" multiple>
+  </form>
+
+  <form action="/fgh" method="post">
+    <label for="colors"> Elige un color</label>
+    <input type="color" name="colors" id="colors">
+  </form>
+  <form action="/dfgh" method="post">
+    <legend>Botones</legend>
+    <label for="submit">
+      <input type="submit" value="Enviar">
+    </label>
+    <label for="reset">
+      <input type="reset" value="Borrar">
+    </label>
+    <label for="imagen">
+      <input type="image" src="./Portada-Rebranding-scaled.jpg" alt="Enviar" width="80" height="28">
+    </label>
+  </form>
+  <form action="/dgd" method="post">
+    <button type="submit">Enviar</button>
+    <button type="reset">Borrar</button>
+    <button>Enviar</button>
+  </form>
+
+
+  <form action="/sdfg" method="post" name="Formulario">
+    <progress max="100" value="10"></progress>
+  </form>
+
+
+  <form action="/sdfg" method="post" name="Formulario">
+    <meter min="0" max="10" low="5" high="9" optimum="10" value="8"></meter>
+  </form>
+</body>
+
+</html>

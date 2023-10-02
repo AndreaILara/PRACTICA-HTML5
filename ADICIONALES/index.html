@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETIQUETAS ADICIONALES</title>
+</head>
+
+<body>
+  <img src="./Portada-Rebranding-scaled.jpg" alt="Imagen" usemap="#map">
+  <map name="map">
+    <area shape="rect" coords="210, 0, 400, 160"
+      href="https://www.thepowermba.com/es/?utm_source=adwords&utm_medium=ppc&utm_campaign=TPMBA%20-%20ES%20-%20BRAND&utm_country=es&utm_product=tpmba&utm_page=web&utm_term=the%20power%20mba&hsa_acc=4360618991&hsa_cam=1599858708&hsa_grp=60807228376&hsa_ad=505484086461&hsa_src=g&hsa_tgt=kwd-387912148256&hsa_kw=the%20power%20mba&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad=1&gclid=CjwKCAjwvJyjBhApEiwAWz2nLT4khNQiSStbxi2ufGkerJSaj0NOh5k6rU7xdRA33mbGqC2FRUsnyhoCLEwQAvD_BwE"
+      alt="The power MBA">
+  </map>
+
+  <object type="application/pdf" data="./etiqueta-html(4).pdf" width="500" height="450">
+  </object>
+
+  <video controls width="500" height="600" autoplay>
+    <source src="./ICON_VERSION8_1.mp4" type="video/mp4">
+  </video>
+
+  <details>
+    <summary> Más información </summary>
+    <h2>Probando etiquetas</h2>
+    <img src="./Portada-Rebranding-scaled.jpg" alt="probando">
+  </details>
+
+  <dialog id="alert">
+    <p>Hola !!</p>
+    <button id="close" onclick="document.getElementById('alert').close()">Ok!</button>
+  </dialog>
+  <button id="show" onclick="document.getElementById('alert').show()">Mostrar</button>
+
+  <dialog id="gandalfModal"> <img src="gandalf.jpg" alt="Gandalf" />
+    <p>¡NO.. PUEDES... PASAR!</p>
+    <button id="close" onclick="document.getElementById('gandalfModal').close()">Ok!</button>
+  </dialog>
+  <button id="show" onclick="document.getElementById('gandalfModal').showModal()">Mostrar</button>
+</body>
+
+</html>
